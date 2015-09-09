@@ -8,22 +8,61 @@ var victStreet =[]
 
 console.log(victimNumber)
 
-for(i =0; i <= victimNumber; i++){
+for(i =1; i <= victimNumber; i++){
 	console.log(i);
 
-	var name = prompt(" Victim's Name?") 
-		victName.push(name)
+	var vicname = prompt(" Victim's Name?") 
+		victName.push(vicname)  
 		console.log(victName)
 
-	var phone = prompt("Victim's phone number?")
-		victPhone.push(phone)
+	var vicphone = prompt("Victim's phone number?")
+		victPhone.push(vicphone)
 		console.log(victPhone)
 
-	var street= prompt("Victim's Street ?")
-		victStreet.push(street)
+	var vicstreet= prompt("Victim's Street ?")
+		victStreet.push(vicstreet)
 		console.log(victStreet)
 
 		
 
 }
+
+var victimInfo = "\nVictims Name: " + victName + "\nVictim's phone: " + victPhone + "\nVictim's Street: " + victStreet
+
+
+var volunteerNumber = prompt( "How many Volunteers?")
+
+var volunteerName =[]
+var volunteerPhone=[]
+var volunteerStreet =[]
+
+console.log(volunteerNumber)
+
+	for( i = 1; i <= volunteerNumber; i++){
+		console.log(i);
+
+	var volname= prompt( "Volunteer's name")
+		volunteerName.push(volname)
+		console.log(volname)
+
+
+	var volnumber = prompt("Volunteer's phone number" )
+		volunteerPhone.push(volnumber)
+		console.log(volnumber)
+
+	var volstreet = prompt("Volunteer's Street?")
+		volunteerStreet.push(volstreet)
+		console.log(volstreet)
+
+
+	}
+
+
+
+var volunteerInfo = "\nVolunteer's name:  " + volunteerName + "\nVolunteer's phone: " + volunteerPhone + "\n Volunteer's street: " + volunteerStreet
+
+
+alert( victimInfo + volunteerInfo)
+
+
 
